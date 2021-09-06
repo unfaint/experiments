@@ -1,12 +1,9 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/unfaint/experiments/defer_e"
+	"github.com/unfaint/experiments/select_e"
 )
 
 func main() {
-	fmt.Println(defer_e.DeferReturn())
-	defer_e.DeferNoReturn()
+	select_e.StartFibSelect(10)
 }
